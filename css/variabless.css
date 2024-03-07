@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: white;
+    --main-yellow: #E0BF00;
+    --hover-color: #ffffff07;
+    --light-yellow: #fcdf0357;
+    --very-light-yellow: #fcdf0323;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
