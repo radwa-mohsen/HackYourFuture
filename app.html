@@ -52,8 +52,6 @@
     <main>
       <section class="dives-section">
         <p class="dark-section-header">Latest Dives</p>
-        <div class="arrow arrow-left">&lt;</div>
-        <div class="arrow arrow-right">&gt;</div>
         <div class="card-container">
           <div class="card">
             <img src="assets/events/event1.jpg" alt="Card Image" />
@@ -286,8 +284,6 @@
 
       <section class="members-section">
         <p class="light-section-header">Active Members</p>
-        <div class="arrow arrow-left">&lt;</div>
-        <div class="arrow arrow-right">&gt;</div>
         <div class="card-container">
           <div class="card light-color">
             <img src="assets/events/event1.jpg" alt="Card Image" />
@@ -597,7 +593,193 @@
           </div>
         </div>
       </section>
+      <button onclick="scrollToTop()" id="scrollTopBtn">
+        <span class="scroll-top-text">Scroll to Top</span>
+        <span class="material-symbols-outlined arrow-icon">
+          arrow_upward_alt
+        </span>
+      </button>
     </main>
+    <!-- Modal layout -->
+    <div class="modal" id="myModal">
+      <div id="modal-content"></div>
+    </div>
+
+    <!-- event modal content -->
+    <div class="events-modals">
+      <div id="card-event1">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event1.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event2">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event2.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event3">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event3.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event4">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event4.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event5">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event5.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event6">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event6.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event7">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event7.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-event8">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event8.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+    </div>
+
+    <!-- Members Modal Content -->
+
+    <div class="members-modals">
+      <div id="card-member1">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event1.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member2">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event2.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member3">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event3.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member4">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event4.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member5">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event5.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member6">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event6.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member7">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event7.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+      <div id="card-member8">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="assets/events/event8.jpg" alt="Card Image" width="300px" />
+        <h3>One breath Pool competition</h3>
+        <div class="card-items"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <a href="app.html" class="logo footer-logo"
+          ><img src="assets/logo.png" width="280px"
+        /></a>
+        <!-- Left Section (Accordion) -->
+        <div class="accordion-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <div class="accordion">
+            <a class="accordion-item"
+              ><span class="material-symbols-outlined accordion-icon">
+                home </span
+              >Home</a
+            >
+            <a class="accordion-item"
+              ><span class="material-symbols-outlined accordion-icon">
+                head_mounted_device </span
+              >Dives</a
+            >
+            <a class="accordion-item"
+              ><span class="material-symbols-outlined accordion-icon">
+                diversity_2 </span
+              >Members</a
+            >
+            <a class="accordion-item"
+              ><span class="material-symbols-outlined accordion-icon">
+                date_range </span
+              >Calendar</a
+            >
+            <a class="accordion-item"
+              ><span class="material-symbols-outlined accordion-icon">
+                psychology_alt </span
+              >About Us</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Section (Contact and Social Media) -->
+        <div class="contact-section">
+          <h3>Contact Us</h3>
+          <p>Phone: +31 647068809</p>
+          <p>Email: radwa.ahakim@gmail.com</p>
+
+          <div class="social-icons">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="assets/facebook-icon.png"
+                alt="Facebook"
+                width="32px"
+                height="32px"
+            /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="assets/instagram-icon.png"
+                alt="Instagram"
+                width="32px"
+                height="32px"
+            /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><img
+                src="assets/linkedin-icon.png"
+                alt="LinkedIn"
+                width="32px"
+                height="32px"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">Copyright ©2024 FANATIC FREEDIVERS.</div>
+    </footer>
 
     <script src="js/app.js"></script>
   </body>
