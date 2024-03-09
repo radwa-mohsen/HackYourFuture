@@ -548,6 +548,7 @@ body.modal-open {
 
 .img-container {
   margin-top: 3rem;
+  width: 40%
 }
 
 .close {
@@ -570,6 +571,11 @@ body.modal-open {
   line-height: 1.75rem;
   padding-right: 2rem;
   margin-top: 2rem;
+  width: 60%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -586,5 +592,13 @@ body.modal-open {
 
   .close {
     right: 1.5rem;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .modal-text {
+    width: 100%;
   }
 }
