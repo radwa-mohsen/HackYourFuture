@@ -15,10 +15,12 @@ const scrollTopButton = document.getElementById("scrollTopBtn");
 const openModal = (content) => {
   modalContent.innerHTML = content;
   myModal.style.display = "block";
+  document.body.classList.add("modal-open");
 };
 
 const closeModal = () => {
   myModal.style.display = "none";
+  document.body.classList.remove("modal-open");
 };
 
 const scrollToTop = () => {

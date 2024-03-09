@@ -75,6 +75,15 @@ nav a {
   color: var(--primary-color);
 }
 
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  display: none !important;
+}
+
 .slide-header {
   display: none;
 }
@@ -188,7 +197,7 @@ footer {
 }
 
 .members-section .card {
-  height: 31rem;
+  height: 33rem;
 
 }
 
@@ -295,6 +304,16 @@ footer {
 
   nav.active {
     left: 0;
+  }
+
+  .nav-icon {
+    display: inline-block !important;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .header-container .menu-active .nav-icon {
+    font-size: 1.5rem;
   }
 
   .slide-header {

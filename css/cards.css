@@ -74,6 +74,11 @@
         margin-right: 1rem;
     }
 
+    .card:hover {
+        cursor: unset;
+        transform: unset;
+    }
+
     .card:last-child {
         margin-right: 0;
     }
