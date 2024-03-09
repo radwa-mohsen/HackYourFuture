@@ -178,6 +178,7 @@ footer {
 
 .social-icons a {
   margin-right: 0.5rem;
+  text-decoration: none;
 }
 
 .footer-copyright {
