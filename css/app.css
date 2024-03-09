@@ -161,6 +161,7 @@ footer {
   padding: 0.625rem;
   text-align: left;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .accordion-icon {
