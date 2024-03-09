@@ -534,7 +534,7 @@ body.modal-open {
   position: relative;
   background-color: var(--white-color);
   margin: 5% auto;
-  padding: 1.5rem;
+  padding: 2rem;
   width: 60%;
   max-height: 80vh;
   overflow: auto;
